@@ -1,42 +1,66 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+:root {
+	/* color */
+	--black: #2d2d2d;
+	--dark-gray: #666;
+	--gray: #bbbcbd;
+	--light-gray: #e8e8e8;
+	--white-gray: #f6f7f9;
+	--white: #fff;
+	--green: #13cf94;
+	--purple-blue: #5700f7;
+	--yellow: #feb13d;
+	--red: #f8004c;
+	/* ui color */
+	--primary-color: var(--green);
+	--background-color: var(--white-gray);
+	--border-color: var(--light-gray);
+	--border-color-dark: var(--gray);
+	--on-background-color: var(--dark-gray);
+	--error-color: var(--red);
+	/* font size */
+	--fs-normal: 16px;
+	--fs-h1: 40px;
+	--fs-h2: 32px;
+	--fs-h3: 28px;
+	--fs-h4: 24px;
+	--fs-h5: 20px;
+	--fs-h6: 16px;
+	--fs-caption: 14px;
+	--fs-caption-sm: 12px;
+	/* font weight */
+	--fw-extra-bold: 700;
+	--fw-bold: 500;
+	--fw-normal: 400;
+	/* line-height */
+	--lh-normal: calc(var(--fs-normal)+8);
+	--lh-h1: calc(var(--fs-h1)+8);
+	--lh-h2: calc(var(--fs-h2)+8);
+	--lh-h3: calc(var(--fs-h3)+8);
+	--lh-h4: calc(var(--fs-h4)+8);
+	--lh-h5: calc(var(--fs-h5)+8);
+	--lh-h6: calc(var(--fs-h6)+8);
+	--lh-caption: calc(var(--fs-caption)+8);
+	--lh-caption-sm: calc(var(--fs-caption-sm)+8);
+	/* border-radius */
+	--br-lg: 16px;
+	--br-md: 8px;
+	--br-sm: 4px;
+	/* box-shadow */
+	--bs-layer1: 8px 11px 29px 0px rgba(129, 127, 139, 0.15);
+	/* width: 12column */
+	--col-1: 110px;
+	--col-4: calc(var(--col-1) * 4);
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+body {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: var(--fw-normal);
+	font-size: var(--fs-normal);
+	color: var(--on-background-color);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* layout */
+.container {
+	width: 1200px;
+	margin: 0 auto;
 }
