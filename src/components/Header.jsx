@@ -1,9 +1,19 @@
+import MenuIcon from "./../assets/menu_icon.svg";
+
 const Header = () => {
 	return (
-		<header>
+		<header className="header">
 			<div className="container">
-				이것은 헤더
-				<div className="logo">로고</div>
+				<h1 className="logo">SHINNH</h1>
+				<nav className="navigation">
+					<a href="">PROFILE</a>
+					<a href="">SKILL</a>
+					<a href="">CAREER</a>
+					<a href="">PROJECT</a>
+				</nav>
+				<div className="menu">
+					<img src={MenuIcon} alt="menu 버튼" />
+				</div>
 			</div>
 		</header>
 	);

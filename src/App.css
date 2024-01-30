@@ -60,7 +60,54 @@ body {
 	color: var(--on-background-color);
 }
 /* layout */
+.wrap {
+	position: relative;
+}
 .container {
 	width: 1200px;
 	margin: 0 auto;
+}
+/* Header */
+.header {
+	position: absolute;
+	left: 40px;
+	top: 48px;
+	display: flex;
+	width: calc(100% - 80px);
+	height: 72px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 72px;
+	margin: 0 auto;
+}
+.header .container {
+	display: flex;
+	align-items: center;
+}
+.logo {
+	margin-right: auto;
+	font-weight: var(--fw-extra-bold);
+	font-size: var(--fs-h1);
+	color: var(--white);
+}
+.navigation {
+	flex: 1;
+	text-align: center;
+}
+.navigation a {
+	margin: 0 20px;
+	color: var(--white);
+}
+.menu {
+	margin-left: auto;
+	text-align: center;
+}
+.menu > img {
+	width: 24px;
+	height: 24px;
+}
+@media (max-width: 1240px) {
+	.container {
+		width: calc(100% - 80px);
+	}
 }
