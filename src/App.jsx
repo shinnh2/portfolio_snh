@@ -5,7 +5,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Visual from "./components/Visual";
 import Profile from "./components/Profile";
-import Skill from "./components/Skill";
+import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
@@ -16,7 +16,7 @@ function App() {
 			<Header />
 			<Visual />
 			<Profile />
-			<Skill />
+			<Skills />
 			<Work />
 			<Project />
 			<Footer />
