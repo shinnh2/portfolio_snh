@@ -198,6 +198,33 @@ body {
 	line-height: var(--lh-normal);
 	font-size: var(--fs-normal);
 }
+/* skills */
+.skills_set {
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+}
+.skills_set .type {
+	margin-right: 20px;
+	font-size: var(--fs-h5);
+	font-weight: var(--fw-bold);
+	color: var(--black);
+}
+.skills_set .skill {
+	padding: 16px 24px;
+	margin: 0 4px;
+	border-radius: 60px;
+	border: 1px solid var(--primary-color);
+	background-color: var(--white);
+	font-weight: var(--fw-bold);
+	color: var(--primary-color);
+}
+.skills_set .skill.em {
+	border: 0 none;
+	background-color: var(--primary-color);
+	font-weight: var(--fw-bold);
+	color: var(--white);
+}
 
 @media (max-width: 1240px) {
 	.container {
