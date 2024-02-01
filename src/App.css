@@ -302,6 +302,71 @@ body {
 .project {
 	background: var(--background-color);
 }
+/* footer */
+.footer {
+	background: var(--black);
+}
+.footer .container {
+	padding: 80px 0;
+}
+.my_email {
+	text-align: center;
+	font-size: var(--fs-h6);
+	font-weight: var(--fw-bold);
+	color: var(--light-gray);
+}
+.my_links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 48px 0;
+}
+.my_links .link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 56px;
+	height: 56px;
+	border-radius: 100%;
+	border: 2px solid var(--gray);
+	font-size: 0;
+	overflow: hidden;
+	opacity: 0.75;
+	transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.my_links .link.velog {
+	margin-right: 16px;
+}
+.my_links .link svg {
+	width: 24px;
+	height: 24px;
+	fill: var(--gray);
+}
+.my_links .link svg path {
+	fill: var(--gray);
+}
+.my_links .link:hover {
+	border: 0 none;
+	background: var(--primary-color);
+	opacity: 1;
+}
+.my_links .link:hover svg,
+.my_links .link:hover svg path {
+	fill: var(--white);
+}
+.footer_line {
+	width: 80px;
+	height: 2px;
+	margin: 0 auto;
+	border: 0 none;
+	background: var(--gray);
+	margin: 48px auto;
+	opacity: 0.75;
+}
+.footer_comment {
+	text-align: center;
+	color: var(--light-gray);
+}
 
 @media (max-width: 1240px) {
 	.container {
