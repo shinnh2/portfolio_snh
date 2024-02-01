@@ -1,11 +1,12 @@
 // interface Data 	{
 // 	projectName: string;
 // 	proejctDescription: string[];
-// 	client: string;
+// 	client?: string;
 // 	period: string;
 // 	engagement: string;
 // 	projectImg: string; //파일명
 // 	projectLink: string;
+//  github: string;
 // }
 
 const ProjectItem = ({ data }) => {
@@ -21,10 +22,12 @@ const ProjectItem = ({ data }) => {
 						<li key={idx}>{el}</li>
 					))}
 				</ul>
-				<dl className="project_info">
-					<dt className="title">클라이언트</dt>
-					<dd className="content">{data.client}</dd>
-				</dl>
+				{data.client ? (
+					<dl className="project_info">
+						<dt className="title">클라이언트</dt>
+						<dd className="content">{data.client}</dd>
+					</dl>
+				) : null}
 				<dl className="project_info">
 					<dt className="title">기간</dt>
 					<dd className="content">{data.period}</dd>
@@ -33,6 +36,14 @@ const ProjectItem = ({ data }) => {
 					<dt className="title">참여도</dt>
 					<dd className="content">{data.engagement}</dd>
 				</dl>
+				{data.github ? (
+					<dl className="project_info">
+						<dt className="title">Github</dt>
+						<dd className="content">
+							<a href={data.github}>{data.github}</a>
+						</dd>
+					</dl>
+				) : null}
 				<a href={data.projectLink} className="project_link" target="_blank">
 					프로젝트 상세보기
 				</a>
