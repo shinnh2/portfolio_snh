@@ -225,10 +225,7 @@ body {
 	font-weight: var(--fw-bold);
 	color: var(--white);
 }
-/* work */
-.work {
-	background: var(--background-color);
-}
+/* work, project common */
 .projects_total_info {
 	margin-bottom: 32px;
 	text-align: right;
@@ -282,7 +279,9 @@ body {
 	font-weight: var(--fw-bold);
 	color: var(--black);
 }
-.project_info .content {
+.project_info a {
+	color: var(--border-color-dark);
+	text-decoration: underline;
 }
 .project_link {
 	display: block;
@@ -294,6 +293,14 @@ body {
 	font-size: var(--fs-h6);
 	font-weight: var(--fw-bold);
 	color: var(--white);
+}
+/* work */
+.work {
+	background: var(--background-color);
+}
+/* project */
+.project {
+	background: var(--background-color);
 }
 
 @media (max-width: 1240px) {
