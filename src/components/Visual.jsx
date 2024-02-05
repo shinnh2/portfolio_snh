@@ -1,8 +1,8 @@
 const Visual = () => {
 	return (
-		<div className="visual">
+		<div className="visual" id="visual">
 			<div className="container">
-				<div className="content">
+				<div className="visual_content">
 					<p className="title">SHIN NA HYEON</p>
 					<p className="sub_title">
 						프론트엔드 개발이 가능한 퍼블리셔, 신나현입니다.
