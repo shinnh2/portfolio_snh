@@ -43,7 +43,7 @@ const iconComponent = (idx) => {
 
 const Profile = () => {
 	return (
-		<div className="profile">
+		<div className="profile" id="profile">
 			<div className="container main">
 				<MainTitle title={"프로필"} />
 				<div className="profile_content_wrap">
