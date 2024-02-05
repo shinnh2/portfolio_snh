@@ -1,4 +1,7 @@
 import MainTitle from "./MainTitle";
+import ProfileIconEducation from "./ProfileIconEducation";
+import ProfileIconCertification from "./ProfileIconCertification";
+import ProfileIconCareer from "./ProfileIconCareer";
 
 const profileContents = [
 	{
@@ -27,6 +30,17 @@ const profileContents = [
 	},
 ];
 
+const iconComponent = (idx) => {
+	switch (idx) {
+		case 0:
+			return <ProfileIconEducation />;
+		case 1:
+			return <ProfileIconCertification />;
+		case 2:
+			return <ProfileIconCareer />;
+	}
+};
+
 const Profile = () => {
 	return (
 		<div className="profile">
@@ -36,6 +50,7 @@ const Profile = () => {
 					{profileContents.map((el, idx) => {
 						return (
 							<div className="profile_content" key={idx}>
+								{iconComponent(idx)}
 								<h3 className="profile_content_title">{el.title}</h3>
 								<ul className="profile_content_description">
 									{el.desc.map((descEl, descIdx) => (
