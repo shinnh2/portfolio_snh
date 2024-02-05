@@ -6,10 +6,18 @@ const Header = () => {
 			<div className="container">
 				<h1 className="logo">SHINNH</h1>
 				<nav className="navigation">
-					<a href="">PROFILE</a>
-					<a href="">SKILL</a>
-					<a href="">CAREER</a>
-					<a href="">PROJECT</a>
+					<a href="">
+						<span data-naviname="PROFILE">PROFILE</span>
+					</a>
+					<a href="">
+						<span data-naviname="SKILL">SKILL</span>
+					</a>
+					<a href="">
+						<span data-naviname="CAREER">CAREER</span>
+					</a>
+					<a href="">
+						<span data-naviname="PROJECT">PROJECT</span>
+					</a>
 				</nav>
 				<div className="menu">
 					<img src={MenuIcon} alt="menu 버튼" />
