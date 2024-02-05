@@ -101,6 +101,26 @@ body {
 .navigation a {
 	margin: 0 20px;
 	color: var(--white);
+	display: inline-block;
+	overflow: hidden;
+}
+.navigation a span {
+	position: relative;
+	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	display: inline-block;
+	padding: 8px 0;
+}
+.navigation a span::before {
+	content: attr(data-naviname);
+	position: absolute;
+	top: 100%;
+	padding: 8px 0;
+}
+.navigation a:hover {
+	color: var(--primary-color);
+}
+.navigation a:hover span {
+	transform: translateY(-100%);
 }
 .menu {
 	margin-left: auto;
@@ -144,15 +164,22 @@ body {
 	color: var(--white);
 }
 .content .visual_btn {
+	display: inline-block;
 	margin-top: 48px;
 	padding: 16px 48px;
 	border-radius: 100px;
-	border: 0 none;
+	border: 1px solid var(--primary-color);
 	background: var(--primary-color);
 	line-height: 1;
 	font-size: var(--fs-h5);
 	font-weight: var(--fw-bold);
 	color: var(--white);
+	transition: all 0.2s ease-in;
+}
+.content .visual_btn:hover {
+	border: 1px solid var(--primary-color);
+	background: none;
+	color: var(--primary-color);
 }
 /* main content */
 /* profile */
@@ -180,11 +207,19 @@ body {
 	flex: 1;
 	margin-left: 24px;
 	padding: 54px;
+	border-radius: 16px;
 	border: 1px solid var(--border-color);
 	background: var(--background-color);
+	transition: all 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 .profile_content:nth-child(1) {
 	margin-left: 0;
+}
+.profile_content svg {
+	width: 48px;
+	height: 48px;
+	margin-bottom: 16px;
+	fill: var(--primary-color);
 }
 .profile_content_title {
 	margin-bottom: 16px;
@@ -198,6 +233,19 @@ body {
 	line-height: var(--lh-normal);
 	font-size: var(--fs-normal);
 }
+.profile_content:hover {
+	border: 1px solid var(--primary-color);
+	background: var(--primary-color);
+	color: var(--white);
+	box-shadow: 4px 5px 12px 3px rgb(0 0 0 / 8%);
+	padding: 32px 54px 76px 54px;
+}
+.profile_content:hover svg {
+	fill: var(--white);
+}
+.profile_content:hover .profile_content_title {
+	color: var(--white);
+}
 /* skills */
 .skills_set {
 	display: flex;
@@ -205,8 +253,9 @@ body {
 	margin-bottom: 16px;
 }
 .skills_set .type {
+	min-width: 180px;
 	margin-right: 20px;
-	font-size: var(--fs-h5);
+	font-size: var(--fs-h6);
 	font-weight: var(--fw-bold);
 	color: var(--black);
 }
@@ -216,6 +265,7 @@ body {
 	border-radius: 60px;
 	border: 1px solid var(--primary-color);
 	background-color: var(--white);
+	font-size: var(--fs-caption);
 	font-weight: var(--fw-bold);
 	color: var(--primary-color);
 }
@@ -243,14 +293,17 @@ body {
 	width: 32%;
 	aspect-ratio: 20/20;
 	margin-right: 48px;
-	background: var(--white);
+	border-radius: 16px;
 	overflow: hidden;
 }
 .project_img_wrap img {
 	object-fit: cover;
 	width: 100%;
+	height: 100%;
+	transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .project_content_wrap {
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 }
@@ -289,10 +342,19 @@ body {
 	padding: 16px 48px;
 	width: fit-content;
 	background: var(--primary-color);
+	border: 1px solid var(--primary-color);
 	border-radius: 60px;
 	font-size: var(--fs-h6);
 	font-weight: var(--fw-bold);
 	color: var(--white);
+	transition: all 0.2s ease-out;
+}
+.project_link:hover {
+	background: var(--white);
+	color: var(--primary-color);
+}
+.project_item:hover .project_img_wrap img {
+	transform: scale(1.2) translateZ(0);
 }
 /* work */
 .work {
