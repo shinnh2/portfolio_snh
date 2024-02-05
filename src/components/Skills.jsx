@@ -20,7 +20,7 @@ const skillsSet = [
 
 const Skills = () => {
 	return (
-		<div className="skills">
+		<div className="skills" id="skills">
 			<div className="container main">
 				<MainTitle title={"스킬"} />
 				<div className="skills_wrap">
