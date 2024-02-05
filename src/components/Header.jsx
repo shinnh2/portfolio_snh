@@ -1,27 +1,27 @@
-import MenuIcon from "./../assets/menu_icon.svg";
+import MenuIcon from "./../assets/settings_icon.svg";
 
-const Header = () => {
+const Header = ({ isHeaderFixed }) => {
 	return (
-		<header className="header">
+		<header className={isHeaderFixed ? "header fixed" : "header"}>
 			<div className="container">
 				<h1 className="logo">SHINNH</h1>
 				<nav className="navigation">
-					<a href="">
+					<a href="#profile">
 						<span data-naviname="PROFILE">PROFILE</span>
 					</a>
-					<a href="">
-						<span data-naviname="SKILL">SKILL</span>
+					<a href="#skills">
+						<span data-naviname="SKILLS">SKILLS</span>
 					</a>
-					<a href="">
-						<span data-naviname="CAREER">CAREER</span>
+					<a href="#work">
+						<span data-naviname="WORK">WORK</span>
 					</a>
-					<a href="">
+					<a href="#project">
 						<span data-naviname="PROJECT">PROJECT</span>
 					</a>
 				</nav>
-				<div className="menu">
-					<img src={MenuIcon} alt="menu 버튼" />
-				</div>
+				<button className="menu">
+					<img src={MenuIcon} alt="설정" />
+				</button>
 			</div>
 		</header>
 	);
