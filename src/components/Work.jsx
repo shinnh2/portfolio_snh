@@ -5,7 +5,7 @@ import workData from "../data/workData";
 const Work = () => {
 	return (
 		<div className="work">
-			<div className="container main">
+			<div className="container main" id="work">
 				<MainTitle title={"작업물"} subTitle={"경력 프로젝트"} />
 				<div className="projects_total_info">개수: {workData.length}</div>
 				<ul className="project_list">
