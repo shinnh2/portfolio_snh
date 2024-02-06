@@ -23,8 +23,9 @@ const Footer = () => {
 				</div>
 				<p className="my_email">nahyeon.shin9@gmail.com</p>
 				<p className="footer_comment">
-					사용된 이미지들은 모두 상업적 목적이 아닌 포트폴리오 목적으로
-					사용되었습니다.
+					사용된 이미지들은 모두 상업적 목적이 아닌
+					<br className="mobile_br" />
+					포트폴리오 목적으로 사용되었습니다.
 				</p>
 			</div>
 		</div>

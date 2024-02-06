@@ -49,14 +49,16 @@ const Profile = () => {
 				<div className="profile_content_wrap">
 					{profileContents.map((el, idx) => {
 						return (
-							<div className="profile_content" key={idx}>
+							<div className="profile_content_box" key={idx}>
 								{iconComponent(idx)}
-								<h3 className="profile_content_title">{el.title}</h3>
-								<ul className="profile_content_description">
-									{el.desc.map((descEl, descIdx) => (
-										<li key={descIdx}>{descEl}</li>
-									))}
-								</ul>
+								<div className="profile_content">
+									<h3 className="profile_content_title">{el.title}</h3>
+									<ul className="profile_content_description">
+										{el.desc.map((descEl, descIdx) => (
+											<li key={descIdx}>{descEl}</li>
+										))}
+									</ul>
+								</div>
 							</div>
 						);
 					})}
