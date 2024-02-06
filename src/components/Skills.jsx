@@ -22,7 +22,7 @@ const Skills = () => {
 	return (
 		<div className="skills" id="skills">
 			<div className="container main">
-				<MainTitle title={"스킬"} />
+				<MainTitle title={"보유한 기술"} />
 				<div className="skills_wrap">
 					{skillsSet.map((el, idx) => (
 						<dl className="skills_set" key={idx}>
