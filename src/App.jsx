@@ -1,6 +1,4 @@
-import { useState, useEffect, useRef, forwardRef } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Visual from "./components/Visual";
@@ -9,9 +7,11 @@ import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
+import MenuDrawer from "./components/MenuDrawer";
 
 function App() {
 	const [isHeaderFixed, setIsHeaderFixed] = useState(false);
+	const [isDrawerOff, setIsDrawerOff] = useState(true);
 	useEffect(() => {
 		const onScrollHander = () => {
 			const scrollPosition = window.scrollY + window.innerHeight;
@@ -22,16 +22,16 @@ function App() {
 		window.addEventListener("scroll", onScrollHander);
 		return () => window.removeEventListener("scroll", onScrollHander);
 	}, []);
-
 	return (
 		<div className="wrap">
-			<Header isHeaderFixed={isHeaderFixed} />
+			<Header isHeaderFixed={isHeaderFixed} setIsDrawerOff={setIsDrawerOff} />
 			<Visual />
 			<Profile />
 			<Skills />
 			<Work />
 			<Project />
 			<Footer />
+			<MenuDrawer isDrawerOff={isDrawerOff} setIsDrawerOff={setIsDrawerOff} />
 		</div>
 	);
 }
