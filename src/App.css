@@ -170,7 +170,7 @@ body {
 	position: relative;
 	background: url("../src/assets/visual_bg.jpg") no-repeat;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: top center;
 }
 .visual .container::before {
 	content: "";
