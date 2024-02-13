@@ -72,7 +72,7 @@ const workData = [
 		period: "2018",
 		engagement: "퍼블리싱 100%",
 		projectImg: "msfcamp_heritage.jpg",
-		projectLink: "https://www.msf.or.kr/campaigns/familygift/familygift.html",
+		projectLink: "https://www.msf.or.kr/campaigns/heritage_1/index.html",
 	},
 	{
 		projectName: "국경없는의사회 러닝메이트 캠페인",
@@ -86,7 +86,7 @@ const workData = [
 		engagement: "퍼블리싱 100%",
 		projectImg: "msfcamp_runmate.jpg",
 		projectLink:
-			"https://www.msf.or.kr/campaigns/runningmate2/running_mate.phpㅍ",
+			"https://www.msf.or.kr/campaigns/runningmate2/running_mate.php",
 	},
 ];
 export default workData;
