@@ -8,6 +8,7 @@ import Work from "./components/Work";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
 import MenuDrawer from "./components/MenuDrawer";
+import TopButton from "./components/TopButton";
 
 function App() {
 	const [isHeaderFixed, setIsHeaderFixed] = useState(false);
@@ -32,6 +33,7 @@ function App() {
 			<Project />
 			<Footer />
 			<MenuDrawer isDrawerOff={isDrawerOff} setIsDrawerOff={setIsDrawerOff} />
+			<TopButton />
 		</div>
 	);
 }
