@@ -598,6 +598,30 @@ body {
 .color_select .color_chips .color_chip[data-color="red"] {
 	background: var(--red);
 }
+/* top button */
+.top_button {
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 56px;
+	height: 56px;
+	font-size: 0;
+	border: 0 none;
+	border-radius: 16px;
+	background: var(--white);
+	box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
+		0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	cursor: pointer;
+}
+.top_button svg {
+	width: 24px;
+	height: 24px;
+	fill: var(--primary-color);
+}
 
 @media (max-width: 1240px) {
 	/* layout, common */
@@ -712,6 +736,11 @@ body {
 	.footer_comment {
 		clear: both;
 		padding: 16px 0;
+	}
+	/* top button */
+	.top_button {
+		bottom: 16px;
+		right: 16px;
 	}
 }
 @media (max-width: 768px) {
