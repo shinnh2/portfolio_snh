@@ -3,6 +3,7 @@ const projectData = [
 		projectName: "GAMETO",
 		proejctDescription: [
 			"프론트엔드로 참여",
+			"매칭하기 서비스, SNS처럼 활용하는 스토리 서비스로 구분되어 있으며 이 중 스토리 서비스 전반을 제작",
 			"스토리 목록: Intersection Observer API를 사용, 오프셋 기반으로 무한스크롤 구현",
 			"Axios를 활용해 API 연결: 이미지, 동영상 등 렌더링",
 			"게시글, 댓글 좋아요 기능 구현",
