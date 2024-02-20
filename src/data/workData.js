@@ -8,7 +8,7 @@ const workData = [
 		],
 		client: "오이사",
 		period: "2020.03 - 2020.05",
-		engagement: "33%(퍼블리셔 3인중 1인)",
+		engagement: "퍼블리싱 33%(퍼블리셔 3인중 1인)",
 		projectImg: "o24.jpg",
 		projectLink: "https://www.ohchanggo.com/main/main.html",
 	},
@@ -22,15 +22,15 @@ const workData = [
 		],
 		client: "NH농협은행",
 		period: "2019.08 - 2019.12",
-		engagement: "33%(퍼블리셔 3인중 1인)",
+		engagement: "퍼블리싱 33%(퍼블리셔 3인중 1인)",
 		projectImg: "nhcok.jpg",
 		projectLink: "https://play.google.com/store/apps/details?id=nh.smart.nhcok",
 	},
 	{
 		projectName: "국경없는의사회 웹진",
 		proejctDescription: [
-			"Javascript 객체를 활용해 반복되는 컴포넌트 렌더링",
-			"PC/모바일 반응형 웹",
+			"분기별로 웹 매거진 제작",
+			"상세 페이지 목록의 반복되는 형식(썸네일, 제목, 내용)에 맞춰 각 내용을 Javascript 객체로 생성. 객체를 활용해 반복되는 컴포넌트 렌더링",
 		],
 		client: "국경없는의사회",
 		period: "2018",
@@ -41,8 +41,8 @@ const workData = [
 	{
 		projectName: "국경없는의사회 채용 캠페인",
 		proejctDescription: [
-			"페이지의 특정 영역 진입시 네비게이션 활성화, 메뉴 클릭시 url의 Fragment가 변경되도록 작업",
-			"PC/모바일 반응형 웹",
+			"페이지의 각 영역 진입시 네비게이션 활성화",
+			"메뉴 클릭시 URL의 Fragment가 변경되며 해당 영역으로 이동",
 		],
 		client: "국경없는의사회",
 		period: "2018",
@@ -53,8 +53,9 @@ const workData = [
 	{
 		projectName: "국경없는의사회 가정의 달 캠페인",
 		proejctDescription: [
-			"Javascript, JQuery를 활용해 후원 물품 장바구니 담기, 카운팅 기능 구현",
-			"PC/모바일 반응형 웹",
+			"후원 물품을 후원자 마음대로 정하여 후원할 수 있도록 쇼핑몰 및 장바구니 개념을 적용해 후원할 수 있도록 한 캠페인",
+			"URL에 쿼리문으로 후원물품과 개수 등의 정보를 전달하면 그에 맞는 후원 페이지로 이동. 이를 이용해 장바구니의 내용을 쿼리문으로 전달",
+			"Javascript, JQuery를 활용해 후원 물품 장바구니 담기, 카운팅 기능 구현. 장바구니의 개수 조정 및 물품 삭제 가능",
 		],
 		client: "국경없는의사회",
 		period: "2018",
@@ -65,8 +66,9 @@ const workData = [
 	{
 		projectName: "국경없는의사회 heritage 캠페인",
 		proejctDescription: [
-			"풀페이지 스크롤링 플러그인을 활용해 가로 스크롤 기능 구현",
-			"PC/모바일 반응형 웹",
+			"풀페이지 스크롤링 플러그인을 활용해 세로 페이지로 한 장면씩 슬라이드 ",
+			"API 문서를 참고하여 중간에 가로 스크롤이 되도록 구현",
+			"우측 인덱스 클릭시 각 영역으로 이동",
 		],
 		client: "국경없는의사회",
 		period: "2018",
@@ -77,9 +79,10 @@ const workData = [
 	{
 		projectName: "국경없는의사회 러닝메이트 캠페인",
 		proejctDescription: [
-			"일반스크롤과 풀페이지 스크롤을 한페이지에서 특정 구간에 따라 작동하도록 구현",
+			"일반스크롤과 풀페이지 스크롤을 특정 구간에 따라 작동하도록 구현",
+			"JS의 함수, prototype을 사용해 클래스처럼 메서드를 제작해 사용 (크로스 브라우징 이슈로 ES6의 클래스 대신 ES5를 사용)",
+			"스크롤 혼용 기능, 페이지 인덱스 URL에 표시, 각 인덱스 클릭시 해당 영역으로 이동하는 기능을 모두 동시에 충돌없이 구현",
 			"PHP개발자와 협업으로 페이지에서 등록된 카드가 다음 영역의 슬라이드에 포함되도록 구현",
-			"PC/모바일 반응형 웹",
 		],
 		client: "국경없는의사회",
 		period: "2018",
