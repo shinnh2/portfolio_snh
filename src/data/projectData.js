@@ -20,6 +20,7 @@ const projectData = [
 		projectName: "CPAYUSIN",
 		proejctDescription: [
 			"프론트엔드로 참여",
+			"(현재는 배포사이트 내림)강의 수강자들이 자유롭게 질문하고 답해주는 사이트",
 			"Toast Editor 를 활용해 사용자에게 마크다운 또는 위지윅 방식으로 게시글을 작성하도록 제공",
 			"이미지 전송 방식을 base64에서 S3 url로 변경하여 서버로 전송하도록 수정",
 			"소셜 로그인 구현(google, kakao)",
@@ -31,7 +32,7 @@ const projectData = [
 		engagement: "프론트엔드 100%",
 		projectImg: "cpayusin.jpg",
 		github: "https://github.com/shinnh2/cpayusin",
-		projectLink: "https://www.cpayusin.com",
+		projectLink: "https://github.com/shinnh2/cpayusin",
 	},
 ];
 export default projectData;
